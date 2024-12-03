@@ -1,0 +1,290 @@
+/* prevent problems with different browsers*/
+*{box-sizing: border-box;}
+
+
+
+
+
+
+body {
+  font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* header starts here*/
+header {
+    background-color: #f2f2f2; 
+    padding: 1rem 2%;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #355c7d;
+}
+header p {
+    margin: 0;
+    color: #355c7d;
+    letter-spacing: 0;
+}
+
+/* small screens*/
+
+@media only screen and (max-width:600px) {
+  nav ul {
+        margin: 0;
+       padding: 0 2vw;
+        list-style-type: none;
+    }
+   nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 500;
+       text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color:#355c7d;
+    }  
+   nav .active a {
+        background-color: #355c7d;
+        background-image: linear-gradient(#355c7d,#223c52);
+        color: white; 
+    }  
+   
+    
+} /*end of media query*/
+
+/* BIG screens*/
+@media only screen and (min-width:601px) {
+    
+ nav {
+    background-color: #f8b195; 
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2%;
+    margin: 0;
+    display: flex;
+}
+nav ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #355c7d;
+    font-weight: 500;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color: #355c7d;
+    color: #f8b195;
+}
+nav a:hover {
+    color: #fff;
+}
+    
+} /*end of media query*/   
+
+
+
+
+
+
+
+
+    
+    
+/* stuff for the main*/
+main {
+    padding: 1rem 2%;
+}
+main h1 {
+    color: #f67280; 
+}
+
+main h2 {
+    color: #355c7d;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #f2f2f2;
+}
+
+main dl dt {
+    color: #f67280;
+    font-weight: 500
+}
+main dl dd {
+    color: #355c7d; 
+    font-size: .9rem;
+}
+
+Main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #f8b195;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #355c7d;
+    border-radius: 5px;
+}
+
+main a {
+    color: #355c7d;
+}
+main a:hover {
+    color: rgb(239,0,24);
+}
+
+.hairloss {
+    width: 100%;
+    margin: 0;
+}
+
+.hairloss img {
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+
+
+figure.spots {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.spots img {
+     width: 100%;
+    height: auto;
+    
+}
+figure.spots figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #355c7d;
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.theForm fieldset {
+    border: 1px solid #355C7D;
+     border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.theForm legend{
+    color: #355C7D;
+    font-size: .8rem;
+}
+
+.theForm label {
+    margin: .5rem;
+}
+
+.theForm label, .theForm select, .theForm [type=text], .theForm [type=tel], .theForm textarea {
+    display: block;
+}
+
+.theForm [type=text], .theForm [type=tel], .theForm select, .theForm textarea {
+   border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.theForm textarea {
+    height: 6rem;
+}
+
+.theForm :required {
+    background-color: rgba(65,51,53,0.1);
+}
+
+.theForm [type=submit] {
+    background-color: #355C7D;
+     border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+table.head-coverings {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+table.head-coverings th {
+    background-color: #355C7D;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.head-coverings td {
+    color: #f67280;
+    padding: .4rem 2vw;
+}
+table.head-coverings tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+table.head-coverings tr:hover {
+    background-color: rgba(53, 92, 125,0.2);
+}
+
+
+
+
+/* Footer Stuff Here */
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    color: #355c7d;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #355c7d;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
